@@ -1,54 +1,66 @@
-⚡ Tirth Joshi - Portfolio
+# 🚀 Creative Developer Portfolio
 
-Computer Science & Engineering Student | Aspiring Cloud & DevOps Engineer
-Building scalable solutions • Exploring AI • Growing with technology 🚀
+A modern, interactive portfolio website showcasing projects and skills with stunning animations and smooth interactions.
 
+## ✨ Features
 
-🚀 About the Project
+- Modern dark theme with gradient accents
+- Fully responsive design (desktop, tablet, mobile)
+- Interactive project cards with modal details
+- Animated skill progress bars
+- Smooth scroll navigation
+- Contact form with email integration
+- Mobile-friendly hamburger menu
 
-This repository contains my personal portfolio website, designed to showcase my projects, technical skills, and development journey as a Computer Science and Engineering student.
+## 📁 Files
 
-The portfolio reflects my focus on building practical, scalable, and user-friendly applications, combined with clean design and modern UI principles. It serves as a central platform where recruiters, developers, and collaborators can explore my work and connect with me.
+- `index.html` - Main HTML structure
+- `style.css` - Styling and animations
+- `script.js` - Interactive functionality
+- `README.md` - Documentation
 
+## 🚀 How to Run
 
-🧠 Key Highlights
-🤖 AI-based Next-Word Predictor using Python & NLP
-🌦️ Interactive Weather Application
-📋 Smart Task Manager with drag-and-drop functionality
-🎨 Modern UI with dark/light theme toggle
-📱 Fully responsive and optimized design
-🛠️ Tech Stack
+1. Navigate to the project folder
+2. Start a local server:
+   ```bash
+   python -m http.server 8000
+   ```
+3. Open in browser: `http://localhost:8000`
 
+## 🛠️ Technologies
 
-Frontend:
-HTML5
-CSS3
-JavaScript
+- HTML5
+- CSS3 (Gradients, Animations)
+- JavaScript (ES6+)
 
+## 📝 Customization
 
-Concepts & Tools:
-Responsive Design
-UI/UX Principles
-DOM Manipulation
-Problem Solving
+### Update Your Info
+Edit these sections in `index.html`:
+- Contact email (line 213)
+- Location (line 219)
+- Social links (line 220-221)
 
+### Change Colors
+Edit CSS variables in `style.css` (lines 7-13):
+```css
+--primary-color: #667eea;
+--secondary-color: #764ba2;
+--accent-color: #00f2fe;
+```
 
-🎯 Vision
-I am currently focused on becoming a Cloud & DevOps Engineer, with a strong interest in:
+### Add Projects
+Edit `projectsData` array in `script.js` (line 1)
 
-☁️ Cloud Computing (AWS)
-⚙️ Infrastructure Automation
-📦 Scalable System Design
+## 🌐 Browser Support
 
-This portfolio will continuously evolve as I build more advanced and impactful projects.
+Chrome, Firefox, Safari, Edge (latest versions)
 
+## 📄 License
 
-📬 Contact
-📧 Email: joshitirth2310@gmail.com
-💼 LinkedIn: https://www.linkedin.com/in/tirth-joshi-ab0537308/
-💻 GitHub: https://github.com/Tirth-67
+Open source - Feel free to use and modify
 
+---
 
-⭐ Support
-
-If you like this project, consider giving it a star ⭐ — it motivates me to keep building and improving.
+**Created with ❤️ by Tirth Joshi**
