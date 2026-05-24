@@ -1,55 +1,99 @@
-⚡ Tirth Joshi - Portfolio
+👋 Tirth Joshi — Portfolio Website
 
-Computer Science & Engineering Student | Aspiring Cloud & DevOps Engineer
-Building scalable solutions • Exploring AI • Growing with technology 🚀
+A personal portfolio website created to showcase my skills, projects, resume, and learning journey as a Computer Science Engineering student.
 
+🌐 Live Website
 
-🚀 About the Project
+https://tirthjoshi.netlify.app/
 
-This repository contains my personal portfolio website, designed to showcase my projects, technical skills, and development journey as a Computer Science and Engineering student.
+🙋 About
 
-The portfolio reflects my focus on building practical, scalable, and user-friendly applications, combined with clean design and modern UI principles. It serves as a central platform where recruiters, developers, and collaborators can explore my work and connect with me.
+Hi, I am Tirth Joshi, a Computer Science Engineering student focused on building clean, practical, and user-friendly web projects.
 
+My current interest is in frontend development, cloud deployment, and AI tools. This portfolio represents my skills, projects, and progress as I continue learning and improving in the tech field.
 
-🧠 Key Highlights
-🤖 AI-based Next-Word Predictor using Python & NLP
-🌦️ Interactive Weather Application
-📋 Smart Task Manager with drag-and-drop functionality
-🎨 Modern UI with dark/light theme toggle
-📱 Fully responsive and optimized design
+🎯 Purpose
+
+This portfolio website is made to:
+
+- Showcase my projects
+- Present my skills clearly
+- Share my resume
+- Build a professional online presence
+- Support internship and placement opportunities
+
 🛠️ Tech Stack
 
+- HTML
+- CSS
+- JavaScript
+- Netlify
+- GitHub
 
-Frontend:
-HTML5
-CSS3
-JavaScript
+✨ Features
 
+- Clean and simple design
+- Responsive layout
+- About section
+- Skills section
+- Projects section
+- Resume download option
+- Contact details
+- Live deployment using Netlify
 
-Concepts & Tools:
-Responsive Design
-UI/UX Principles
-DOM Manipulation
-Problem Solving
+📂 Featured Projects
 
+🔮 Next-Word Predictor
 
-🎯 Vision
+A Python-based project that predicts the next word based on user input. It shows my interest in Python, AI tools, and natural language processing basics.
 
-I am currently focused on becoming a Cloud & DevOps Engineer, with a strong interest in:
+🌦️ Interactive Weather App
 
-☁️ Cloud Computing (AWS)
-⚙️ Infrastructure Automation
-📦 Scalable System Design
+A weather-based web project that displays weather information in a simple and interactive way.
 
-This portfolio will continuously evolve as I build more advanced and impactful projects.
+✅ Smart Task Manager
 
+A task management project created to help users organize and manage their daily tasks easily.
+
+🌱 Current Learning Focus
+
+- Frontend development
+- Git and GitHub
+- Cloud deployment
+- Netlify and Vercel hosting
+- AI-assisted development
+- Practical web projects
+
+🚀 Deployment
+
+This portfolio website is deployed on Netlify.
+
+Deployment process:
+
+1. Created the website
+2. Uploaded the code to GitHub
+3. Connected the repository with Netlify
+4. Deployed the website live
+
+🔮 Future Improvements
+
+- Add more live project links
+- Add GitHub links for each project
+- Improve animations
+- Add more cloud-based projects
+- Improve project descriptions
+- Build and add a placement cell website project
 
 📬 Contact
 
-📧 Email: joshitirth2310@gmail.com
-💼 LinkedIn: https://www.linkedin.com/in/tirth-joshi-ab0537308/
-💻 GitHub: https://github.com/Tirth-67
+Portfolio:
+https://tirthjoshi.netlify.app/
 
-⭐ Support
+GitHub:
+https://github.com/Tirth-67
 
-If you like this project, consider giving it a star ⭐ — it motivates me to keep building and improving.
+LinkedIn:
+
+
+Email:
+joshitirth2310@gmail.com
