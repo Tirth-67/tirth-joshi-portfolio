@@ -95,6 +95,5 @@ https://github.com/Tirth-67
 LinkedIn:
 https://www.linkedin.com/in/tirth-joshi-ab0537308/
 
-
 Email:
 joshitirth2310@gmail.com
