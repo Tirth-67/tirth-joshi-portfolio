@@ -1,99 +1,57 @@
-👋 Tirth Joshi — Portfolio Website
+# 🚀 Premium Recruiter-Ready Portfolio
 
-A personal portfolio website created to showcase my skills, projects, resume, and learning journey as a Computer Science Engineering student.
+This directory contains the main web assets of the portfolio application. Fully upgraded to provide visual consistency, clean semantic layout structuring, and modern user interactions suited for professional engineering reviewers.
 
-🌐 Live Website
+## 🔗 Live Site
 
-https://tirthjoshi.netlify.app/
+**URL:** [https://tirthjoshi.netlify.app](https://tirthjoshi.netlify.app)
+**Hosting Platform:** Netlify
 
-🙋 About
+---
 
-Hi, I am Tirth Joshi, a Computer Science Engineering student focused on building clean, practical, and user-friendly web projects.
+## 📁 Source Assets
 
-My current interest is in frontend development, cloud deployment, and AI tools. This portfolio represents my skills, projects, and progress as I continue learning and improving in the tech field.
+- `index.html` – Redesigned HTML structure. Contains accessibility improvements, modern fonts, sticky navbar layout, timeline grids, and inline SVGs.
+- `style.css` – Premium stylesheet using obsidian color variables (`--dark-bg`, `--accent-gradient`), responsive flex containers, glassmorphism filters, theme switches, and mobile drawer transitions.
+- `script.js` – Application coordinator containing the detailed project array (5 items), interactive modal triggers, navbar observer handlers, theme persistence storage, and Web3Forms submit feedback routines.
+- `resume.pdf` – Developer's current professional curriculum vitae.
 
-🎯 Purpose
+---
 
-This portfolio website is made to:
+## 🛠️ Local Customization & Adjustments
 
-- Showcase my projects
-- Present my skills clearly
-- Share my resume
-- Build a professional online presence
-- Support internship and placement opportunities
+### 1. Update Contact Information
+Locate and edit these sections inside `index.html`:
+- Web3Forms API Key: Edit the `<input type="hidden" name="access_key" value="YOUR-KEY">` value on line 286.
+- Email: Email links on lines 81 and 243.
+- Social Links: Lines 88-95, and 250-275.
 
-🛠️ Tech Stack
+### 2. Add New Projects
+To include more projects, open `script.js` and push a new configuration object to the `projectsData` array at the top of the file:
+```javascript
+{
+    title: 'Project Title',
+    status: 'Completed / In Progress',
+    summary: 'Brief description...',
+    description: 'Detailed description for the modal display...',
+    technologies: ['Tech 1', 'Tech 2'],
+    githubLink: 'URL',
+    liveLink: 'URL'
+}
+```
 
-- HTML
-- CSS
-- JavaScript
-- Netlify
-- GitHub
+---
 
-✨ Features
+## 📝 Upgrades Completed Checklist
 
-- Clean and simple design
-- Responsive layout
-- About section
-- Skills section
-- Projects section
-- Resume download option
-- Contact details
-- Live deployment using Netlify
-
-📂 Featured Projects
-
-🔮 Next-Word Predictor
-
-A Python-based project that predicts the next word based on user input. It shows my interest in Python, AI tools, and natural language processing basics.
-
-🌦️ Interactive Weather App
-
-A weather-based web project that displays weather information in a simple and interactive way.
-
-✅ Smart Task Manager
-
-A task management project created to help users organize and manage their daily tasks easily.
-
-🌱 Current Learning Focus
-
-- Frontend development
-- Git and GitHub
-- Cloud deployment
-- Netlify and Vercel hosting
-- AI-assisted development
-- Practical web projects
-
-🚀 Deployment
-
-This portfolio website is deployed on Netlify.
-
-Deployment process:
-
-1. Created the website
-2. Uploaded the code to GitHub
-3. Connected the repository with Netlify
-4. Deployed the website live
-
-🔮 Future Improvements
-
-- Add more live project links
-- Add GitHub links for each project
-- Improve animations
-- Add more cloud-based projects
-- Improve project descriptions
-- Build and add a placement cell website project
-
-📬 Contact
-
-Portfolio:
-https://tirthjoshi.netlify.app/
-
-GitHub:
-https://github.com/Tirth-67
-
-LinkedIn:
-https://www.linkedin.com/in/tirth-joshi-ab0537308/
-
-Email:
-joshitirth2310@gmail.com
+- [x] Responsive layout (Desktop, Tablet, Mobile)
+- [x] Premium Obsidian and Indigo/Teal visual themes
+- [x] Seamless sticky navigation and mobile drawer
+- [x] Interactive Developer Java Code Preview Card
+- [x] Scannable Education timeline card layout
+- [x] Projects list (5 projects) with custom SVG icons (no broken images)
+- [x] Separate "Currently Building" Laundry service banner
+- [x] Why This Portfolio? recruiter aligning details card
+- [x] Contact section with direct profile links and Web3Forms
+- [x] Direct View and Download Resume actions for `resume.pdf`
+- [x] Persistent theme choice in browser localStorage
