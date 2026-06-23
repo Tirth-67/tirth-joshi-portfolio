@@ -718,6 +718,29 @@ input:checked + .slider::before {
 /* ----------------------------------------------------
    SECTIONS LAYOUT & LABELS
 ---------------------------------------------------- */
+section {
+    scroll-margin-top: 100px;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: var(--text-light);
+    font-size: 1.05rem;
+    max-width: 600px;
+    margin: -2.5rem auto 3.5rem;
+    line-height: 1.6;
+}
+
+.view-all-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 3.5rem;
+}
+
+.view-all-btn {
+    padding: 0.95rem 2rem;
+}
+
 .section-container {
     max-width: 1200px;
     margin: 0 auto;

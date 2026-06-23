@@ -20,7 +20,7 @@ const projectsData = [
     },
     {
         title: 'Smart Task Manager',
-        status: 'Completed',
+        status: 'In Progress',
         summary: 'Lightweight productivity tool with drag-and-drop mechanics and local storage persistence for dashboard status.',
         description: 'An interactive productivity dashboard enabling custom task prioritization and management. Includes drag-and-drop event logic to move items across status lists, dynamic addition/deletion UI controls, and local storage integration to retain task board contents on browser reloads.',
         technologies: ['HTML5', 'CSS3', 'JavaScript', 'Local Storage'],
@@ -29,7 +29,7 @@ const projectsData = [
     },
     {
         title: 'Interactive Weather App',
-        status: 'Completed',
+        status: 'Coming Soon',
         summary: 'Real-time weather forecasting application presenting clean layout data and dynamic weather state visual animations.',
         description: 'A responsive weather dashboard client. It connects to open weather API endpoints using fetch scripts to extract location statistics, parses JSON replies to display details like temperature and wind speed, and changes background gradient states based on cloud coverage.',
         technologies: ['HTML5', 'CSS3', 'JavaScript', 'Weather API'],
@@ -38,7 +38,7 @@ const projectsData = [
     },
     {
         title: 'Next-Word Predictor',
-        status: 'Completed',
+        status: 'Coming Soon',
         summary: 'Advanced Python model that predicts the next logical word from user input phrases, applying NLP techniques.',
         description: 'An artificial intelligence and NLP study application. Coded using advanced Python text processing pipelines and neural network models (LSTM/TensorFlow), this tool analyzes entered string sequences to estimate the next logical term in line. Trained on custom corpus texts.',
         technologies: ['Python', 'TensorFlow', 'NLP', 'Machine Learning'],
