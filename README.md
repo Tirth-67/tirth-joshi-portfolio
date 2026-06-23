@@ -41,7 +41,9 @@ The goal of this website is to present my profile, skills, resume, projects, and
 A personal portfolio website designed to showcase my profile, skills, resume, and projects.
 
 **Tech Stack:** HTML, CSS, JavaScript
+
 **Live Website:** https://tirthjoshi.netlify.app
+
 **GitHub Repository:** https://github.com/Tirth-67/tirth-joshi-portfolio
 
 ### Laundry Management System
@@ -83,8 +85,11 @@ tirth-joshi-portfolio/
 ## Contact
 
 **Email:** [joshitirth2310@gmail.com](mailto:joshitirth2310@gmail.com)
+
 **GitHub:** https://github.com/Tirth-67
+
 **LinkedIn:** https://www.linkedin.com/in/tirth-joshi-ab0537308/
+
 **LeetCode:** https://leetcode.com/u/Tirth_17
 
 ## Author
