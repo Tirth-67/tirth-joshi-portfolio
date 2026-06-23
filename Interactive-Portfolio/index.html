@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tirth Joshi | CSE Student & Frontend Developer</title>
+    
+    <!-- SEO & Social Media Meta Tags -->
+    <meta name="description"
+        content="Portfolio of Tirth Joshi, a Computer Science Engineering student focused on frontend development, Java, DSA, and practical web projects.">
+    <meta property="og:title" content="Tirth Joshi | CSE Student & Frontend Developer">
+    <meta property="og:description"
+        content="Portfolio of Tirth Joshi, showcasing scalable web projects, Java programming, and practical software engineering learning.">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+    
+    <!-- Google Fonts for Premium Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dark-theme">
+    <!-- Interactive Glow & Custom Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="cursor-glow"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-symbol">&lt;/&gt;</span> Tirth Joshi
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <label class="theme-switch" for="checkbox" title="Toggle Theme">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="slider round">
+                        <span class="icon-sun">☀️</span>
+                        <span class="icon-moon">🌙</span>
+                    </div>
+                </label>
+                <div class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-overlay" id="mobileOverlay"></div>
+    </nav>
+
+    <!-- Pages Container (Natural Scrolling) -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="stars"></div>
+            <div class="hero-container">
+                <div class="hero-grid">
+                    <div class="hero-info animate-on-load">
+                        <div class="availability-badge">
+                            <span class="pulse-dot"></span> Open to Internships
+                        </div>
+                        <h1 class="hero-title">
+                            Hi, I'm <span class="gradient-text">Tirth Joshi</span>
+                        </h1>
+                        <p class="hero-role">CSE Student | Frontend Developer | Java & DSA Learner</p>
+                        <p class="hero-subtitle">
+                            I build clean, practical, and user-friendly web projects using HTML, CSS, JavaScript, and Java. Currently improving my GitHub profile through real-world student projects and cloud deployment basics.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#projects" class="cta-button primary-btn">View Projects</a>
+                            
+                            <div class="resume-btn-group">
+                                <a href="resume.pdf" target="_blank" class="cta-button secondary-btn">View Resume</a>
+                                <a href="resume.pdf" download class="cta-button download-btn" title="Download Resume">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                                </a>
+                            </div>
+                            
+                            <div class="social-links-inline">
+                                <a href="https://github.com/Tirth-67" target="_blank" rel="noopener" class="social-icon-link" title="GitHub">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                    </svg>
+                                </a>
+                                <a href="https://www.linkedin.com/in/tirth-joshi-ab0537308/" target="_blank" rel="noopener" class="social-icon-link" title="LinkedIn">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-visual animate-on-load">
+                        <!-- Glassmorphic Code IDE Preview Card -->
+                        <div class="code-card">
+                            <div class="code-card-header">
+                                <div class="window-controls">
+                                    <span class="control close-ctrl"></span>
+                                    <span class="control minimize-ctrl"></span>
+                                    <span class="control maximize-ctrl"></span>
+                                </div>
+                                <div class="tab-title">Developer.java</div>
+                            </div>
+                            <div class="code-card-body">
+                                <pre><code><span class="code-keyword">public class</span> <span class="code-class">Developer</span> {
+    <span class="code-keyword">public static void</span> <span class="code-method">main</span>(String[] args) {
+        String name = <span class="code-string">"Tirth Joshi"</span>;
+        String[] skills = {
+            <span class="code-string">"Web Development"</span>,
+            <span class="code-string">"Java Programming"</span>,
+            <span class="code-string">"DSA & Algorithms"</span>
+        };
+        
+        <span class="code-keyword">boolean</span> readyToGrow = <span class="code-keyword">true</span>;
+        <span class="code-keyword">if</span> (readyToGrow) {
+            System.out.println(<span class="code-string">"Ready for internships!"</span>);
+        }
+    }
+}</code></pre>
+                            </div>
+                            <div class="code-card-footer">
+                                <span class="terminal-status">✓ Compilation Successful</span>
+                                <span class="terminal-lang">Java 17</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Stat Cards -->
+                <div class="stat-cards-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">🎓</div>
+                        <div class="stat-info">
+                            <h3>B.Tech CSE</h3>
+                            <p>Parul University Student</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">💻</div>
+                        <div class="stat-info">
+                            <h3>Frontend Projects</h3>
+                            <p>HTML, CSS, JavaScript</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">☕</div>
+                        <div class="stat-info">
+                            <h3>Java & DSA</h3>
+                            <p>Problem Solving Learner</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">☁️</div>
+                        <div class="stat-info">
+                            <h3>Cloud Basics</h3>
+                            <p>Git, GitHub, Netlify</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section scroll-reveal">
+            <div class="section-container">
+                <span class="section-label">About</span>
+                <h2 class="section-title-left">Who I Am</h2>
+                <div class="about-grid">
+                    <div class="about-desc">
+                        <p class="lead-text">
+                            I am a B.Tech Computer Science Engineering student focused on building clean, practical, and user-friendly web applications.
+                        </p>
+                        <p>
+                            My technical journey is centered around frontend development, core Java programming, Data Structures & Algorithms, and understanding web mechanics. I enjoy translating logical problem-solving into real-world code that runs seamlessly in the browser.
+                        </p>
+                        <p>
+                            Currently, I am working on expanding my skillset, building robust portfolio projects, and improving my GitHub profile. I aim to grow continuously, learn modern technologies, and contribute productively to development teams through internship opportunities.
+                        </p>
+                    </div>
+                    
+                    <!-- Why This Portfolio (Recruiter Proof) -->
+                    <div class="proof-card">
+                        <div class="proof-header">
+                            <h3>Why This Portfolio?</h3>
+                            <span class="proof-subtitle">Recruiter & Engineering Checkpoints</span>
+                        </div>
+                        <ul class="proof-list">
+                            <li>
+                                <span class="proof-icon">🎯</span>
+                                <div class="proof-text">
+                                    <strong>Clean Project-Based Learning</strong>
+                                    <p>Avoiding tutorials in favor of building real systems that solve practical challenges.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="proof-icon">🌿</span>
+                                <div class="proof-text">
+                                    <strong>GitHub-Focused Development</strong>
+                                    <p>Pushing actual source code, tracking revisions, and refining version control habits.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="proof-icon">📱</span>
+                                <div class="proof-text">
+                                    <strong>Responsive Web Design</strong>
+                                    <p>Ensuring layout integrity and visual hierarchies scale gracefully on all screen sizes.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="proof-icon">📈</span>
+                                <div class="proof-text">
+                                    <strong>Continuous Improvement</strong>
+                                    <p>Actively expanding knowledge into Node.js backend processes and cloud hosting basics.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education-section scroll-reveal">
+            <div class="section-container">
+                <span class="section-label">Education</span>
+                <h2 class="section-title">Academic Journey</h2>
+                
+                <div class="education-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-header">
+                                <span class="timeline-date">2023 - Present</span>
+                                <h3 class="timeline-degree">B.Tech in Computer Science Engineering</h3>
+                                <h4 class="timeline-institute">Parul University</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <div class="timeline-badge-group">
+                                    <span class="timeline-badge">Diploma-to-Degree Student</span>
+                                    <span class="timeline-badge">Engineering Track</span>
+                                </div>
+                                <p class="timeline-desc">
+                                    Enrolled as a Diploma-to-Degree student, studying core computer science theories and implementing software engineering practices.
+                                </p>
+                                <div class="focus-areas">
+                                    <h5>Focus Areas:</h5>
+                                    <div class="focus-badges">
+                                        <span>Web Development</span>
+                                        <span>Java Programming</span>
+                                        <span>Data Structures & Algorithms</span>
+                                        <span>Cloud Basics</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section scroll-reveal">
+            <div class="section-container">
+                <span class="section-label">Projects</span>
+                <h2 class="section-title">Featured Projects</h2>
+                
+                <!-- Currently Building Highlight -->
+                <div class="currently-building-banner">
+                    <div class="banner-badge">Currently Building</div>
+                    <div class="banner-content">
+                        <h3>Laundry Management System</h3>
+                        <p>A web-based system for booking laundry services, calculating service prices, and tracking order status.</p>
+                        <div class="banner-meta">
+                            <span class="banner-tech-tag">HTML</span>
+                            <span class="banner-tech-tag">CSS</span>
+                            <span class="banner-tech-tag">JavaScript</span>
+                            <span class="banner-status-badge in-progress">In Progress</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1: Portfolio Website -->
+                    <div class="project-card" onclick="openModal(0)">
+                        <div class="project-card-visual gradient-portfolio">
+                            <!-- Laptop SVG -->
+                            <svg class="project-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="2" y="3" width="20" height="14" rx="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <line x1="8" y1="21" x2="16" y2="21" stroke-linecap="round"/>
+                                <line x1="12" y1="17" x2="12" y2="21" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <div class="project-card-content">
+                            <div class="project-header-meta">
+                                <span class="status-badge completed">Completed</span>
+                            </div>
+                            <h3>Portfolio Website</h3>
+                            <p class="project-summary">My personal developer portfolio upgraded to a premium, recruiter-ready profile with strong visual design.</p>
+                            <div class="tech-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Responsive</span>
+                            </div>
+                            <div class="project-card-actions" onclick="event.stopPropagation()">
+                                <a href="https://github.com/Tirth-67/tirth-joshi-portfolio" target="_blank" rel="noopener" class="project-btn github-btn">
+                                    Code 
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                                </a>
+                                <a href="https://tirthjoshi.netlify.app" target="_blank" rel="noopener" class="project-btn live-btn">
+                                    Live Demo 
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Laundry Management System -->
+                    <div class="project-card" onclick="openModal(1)">
+                        <div class="project-card-visual gradient-laundry">
+                            <!-- Washing Machine SVG -->
+                            <svg class="project-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="4" y="2" width="16" height="20" rx="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="12" cy="13" r="5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="8" cy="6" r="1"/>
+                                <circle cx="12" cy="6" r="1"/>
+                                <line x1="16" y1="6" x2="16" y2="6" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <div class="project-card-content">
+                            <div class="project-header-meta">
+                                <span class="status-badge in-progress">In Progress</span>
+                            </div>
+                            <h3>Laundry Management System</h3>
+                            <p class="project-summary">A web-based system for booking laundry services, calculating service prices, and tracking order status.</p>
+                            <div class="tech-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                            <div class="project-card-actions" onclick="event.stopPropagation()">
+                                <button class="project-btn disabled-btn" disabled>Coming Soon</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Smart Task Manager -->
+                    <div class="project-card" onclick="openModal(2)">
+                        <div class="project-card-visual" style="background: url('task.png') center/cover no-repeat;">
+                        </div>
+                        <div class="project-card-content">
+                            <div class="project-header-meta">
+                                <span class="status-badge completed">Completed</span>
+                            </div>
+                            <h3>Smart Task Manager</h3>
+                            <p class="project-summary">Lightweight productivity tool with drag-and-drop mechanics and local storage persistence for dashboard status.</p>
+                            <div class="tech-tags">
+                                <span class="tag">HTML/CSS</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Local Storage</span>
+                            </div>
+                            <div class="project-card-actions" onclick="event.stopPropagation()">
+                                <button class="project-btn disabled-btn" disabled>Coming Soon</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: Interactive Weather App -->
+                    <div class="project-card" onclick="openModal(3)">
+                        <div class="project-card-visual" style="background: url('weather.png') center/cover no-repeat;">
+                        </div>
+                        <div class="project-card-content">
+                            <div class="project-header-meta">
+                                <span class="status-badge completed">Completed</span>
+                            </div>
+                            <h3>Interactive Weather App</h3>
+                            <p class="project-summary">Real-time weather application with beautiful weather visual status updates and dynamic forecast reports.</p>
+                            <div class="tech-tags">
+                                <span class="tag">HTML/CSS</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Weather API</span>
+                            </div>
+                            <div class="project-card-actions" onclick="event.stopPropagation()">
+                                <button class="project-btn disabled-btn" disabled>Coming Soon</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5: Next-Word Predictor -->
+                    <div class="project-card" onclick="openModal(4)">
+                        <div class="project-card-visual" style="background: url('next_word.png') center/cover no-repeat;">
+                        </div>
+                        <div class="project-card-content">
+                            <div class="project-header-meta">
+                                <span class="status-badge completed">Completed</span>
+                            </div>
+                            <h3>Next-Word Predictor</h3>
+                            <p class="project-summary">Advanced Python model that predicts the next logical word from user input phrases, applying NLP techniques.</p>
+                            <div class="tech-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">AI/ML</span>
+                                <span class="tag">TensorFlow</span>
+                                <span class="tag">NLP</span>
+                            </div>
+                            <div class="project-card-actions" onclick="event.stopPropagation()">
+                                <button class="project-btn disabled-btn" disabled>Coming Soon</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section scroll-reveal">
+            <div class="section-container">
+                <span class="section-label">Skills</span>
+                <h2 class="section-title">Technical Skillset</h2>
+                
+                <div class="skills-grid">
+                    <!-- Category 1: Frontend -->
+                    <div class="skills-card">
+                        <div class="skills-card-header">
+                            <span class="skills-cat-icon">🎨</span>
+                            <h3>Frontend</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-badge-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+                                <span>HTML</span>
+                            </div>
+                            <div class="skill-badge-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+                                <span>CSS</span>
+                            </div>
+                            <div class="skill-badge-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category 2: Programming -->
+                    <div class="skills-card">
+                        <div class="skills-card-header">
+                            <span class="skills-cat-icon">☕</span>
+                            <h3>Programming</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-badge-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+                                <span>Java</span>
+                            </div>
+                            <div class="skill-badge-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                                <span>Python</span>
+                            </div>
+                            <div class="skill-badge-item">
+                                <div class="custom-dsa-icon">⛓️</div>
+                                <span>DSA</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category 3: Tools -->
+                    <div class="skills-card">
+                        <div class="skills-card-header">
+                            <span class="skills-cat-icon">🛠️</span>
+                            <h3>Tools & Platforms</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-badge-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                                <span>Git</span>
+                            </div>
+                            <div class="skill-badge-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="github-icon-svg" alt="GitHub">
+                                <span>GitHub</span>
+                            </div>
+                            <div class="skill-badge-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code">
+                                <span>VS Code</span>
+                            </div>
+                            <div class="skill-badge-item">
+                                <img src="https://www.vectorlogo.zone/logos/netlify/netlify-icon.svg" alt="Netlify">
+                                <span>Netlify</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category 4: Currently Learning -->
+                    <div class="skills-card learning-card">
+                        <div class="skills-card-header">
+                            <span class="skills-cat-icon">🌱</span>
+                            <h3>Currently Learning</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-badge-item learning">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+                                <span>Node.js</span>
+                            </div>
+                            <div class="skill-badge-item learning">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
+                                <span>MongoDB</span>
+                            </div>
+                            <div class="skill-badge-item learning">
+                                <div class="custom-dsa-icon">☁️</div>
+                                <span>Cloud / DevOps</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section scroll-reveal">
+            <div class="section-container">
+                <span class="section-label">Contact</span>
+                <h2 class="section-title">Let's Connect</h2>
+                
+                <div class="contact-grid">
+                    <!-- Contact Cards / Info Links -->
+                    <div class="contact-info-panel">
+                        <h3 class="contact-headline">Let's build<br><span class="highlight">something great.</span></h3>
+                        <p class="contact-subtext">
+                            Whether you're a recruiter seeking a dedicated student intern, have a project idea, or just want to connect, feel free to reach out. I will respond as soon as possible!
+                        </p>
+                        
+                        <div class="contact-cards-group">
+                            <a href="mailto:joshitirth2310@gmail.com" class="contact-info-card">
+                                <span class="card-icon">📧</span>
+                                <div class="card-details">
+                                    <span class="card-label">Email Me</span>
+                                    <span class="card-value">joshitirth2310@gmail.com</span>
+                                </div>
+                            </a>
+                            
+                            <a href="https://github.com/Tirth-67" target="_blank" rel="noopener" class="contact-info-card">
+                                <span class="card-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                    </svg>
+                                </span>
+                                <div class="card-details">
+                                    <span class="card-label">GitHub Profile</span>
+                                    <span class="card-value">github.com/Tirth-67</span>
+                                </div>
+                            </a>
+
+                            <a href="https://www.linkedin.com/in/tirth-joshi-ab0537308/" target="_blank" rel="noopener" class="contact-info-card">
+                                <span class="card-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                    </svg>
+                                </span>
+                                <div class="card-details">
+                                    <span class="card-label">LinkedIn</span>
+                                    <span class="card-value">Tirth Joshi</span>
+                                </div>
+                            </a>
+
+                            <a href="https://leetcode.com/u/Tirth_17/" target="_blank" rel="noopener" class="contact-info-card">
+                                <span class="card-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M13.483 0a1.374 1.374 0 0 0-.961.414l-9.75 9.75a1.374 1.374 0 0 0 0 1.942l4.635 4.635a1.35 1.35 0 0 0 1.912 0l9.75-9.75a1.375 1.375 0 0 0-.41-2.235L14.73.156A1.374 1.374 0 0 0 13.483 0zm-.375 2.183 2.946 2.947-8.79 8.79-2.946-2.947z"/>
+                                    </svg>
+                                </span>
+                                <div class="card-details">
+                                    <span class="card-label">LeetCode Profile</span>
+                                    <span class="card-value">leetcode.com/u/Tirth_17</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Web3Forms Form -->
+                    <div class="contact-form-panel">
+                        <form class="elegant-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="ef56aab5-2ebb-40eb-ae9a-ef116f0b7b12">
+                            
+                            <div class="input-group">
+                                <label for="form-name">Your Name</label>
+                                <input type="text" id="form-name" name="name" placeholder="John Doe" required>
+                            </div>
+                            
+                            <div class="input-group">
+                                <label for="form-email">Email Address</label>
+                                <input type="email" id="form-email" name="email" placeholder="john@example.com" required>
+                            </div>
+                            
+                            <div class="input-group">
+                                <label for="form-message">Your Message</label>
+                                <textarea id="form-message" rows="5" name="message" placeholder="Hi Tirth, I am interested in your profile for a front-end internship role..." required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="send-btn">
+                                <span>Send Message</span>
+                                <span class="btn-icon">✨</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Project Detail Modal -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()" aria-label="Close modal">&times;</span>
+            <div class="modal-body-content">
+                <span class="modal-status-badge" id="modalStatusBadge"></span>
+                <h2 id="modalTitle"></h2>
+                <p id="modalDescription"></p>
+                <div class="modal-tags-container">
+                    <h4>Technologies Used:</h4>
+                    <div class="modal-tags" id="modalTags"></div>
+                </div>
+                <div class="modal-links" id="modalLinks"></div>
+                <div class="modal-close-wrapper">
+                    <button class="modal-button" onclick="closeModal()">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2026 Tirth Joshi. All rights reserved.</p>
+            <p class="footer-tagline">Crafted with care, logic, and clean code.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
