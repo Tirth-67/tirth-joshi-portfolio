@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tirth Joshi | CSE Student & Frontend Developer</title>
+    <title>Tirth Joshi | Frontend Developer &amp; CSE Student</title>
     
     <!-- SEO & Social Media Meta Tags -->
     <meta name="description"
-        content="Portfolio of Tirth Joshi, a Computer Science Engineering student focused on frontend development, Java, DSA, and practical web projects.">
-    <meta property="og:title" content="Tirth Joshi | CSE Student & Frontend Developer">
+        content="Portfolio of Tirth Joshi — Frontend Developer and CSE Student at Parul University. Building clean, practical web projects.">
+    <meta property="og:title" content="Tirth Joshi | Frontend Developer &amp; CSE Student">
     <meta property="og:description"
-        content="Portfolio of Tirth Joshi, showcasing scalable web projects, Java programming, and practical software engineering learning.">
+        content="Portfolio of Tirth Joshi — Frontend Developer and CSE Student at Parul University. Building clean, practical web projects.">
     <meta property="og:type" content="website">
     
     <!-- Favicon -->
@@ -21,7 +21,7 @@
     <!-- Google Fonts for Premium Typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="style.css">
 </head>
@@ -49,8 +49,24 @@
                 <label class="theme-switch" for="checkbox" title="Toggle Theme">
                     <input type="checkbox" id="checkbox" />
                     <div class="slider round">
-                        <span class="icon-sun">☀️</span>
-                        <span class="icon-moon">🌙</span>
+                        <span class="icon-sun">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="5"></circle>
+                                <line x1="12" y1="1" x2="12" y2="3"></line>
+                                <line x1="12" y1="21" x2="12" y2="23"></line>
+                                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                                <line x1="1" y1="12" x2="3" y2="12"></line>
+                                <line x1="21" y1="12" x2="23" y2="12"></line>
+                                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                            </svg>
+                        </span>
+                        <span class="icon-moon">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                            </svg>
+                        </span>
                     </div>
                 </label>
                 <div class="hamburger" id="hamburger" aria-label="Toggle menu">
@@ -77,19 +93,20 @@
                         <h1 class="hero-title">
                             Hi, I'm <span class="gradient-text">Tirth Joshi</span>
                         </h1>
-                        <p class="hero-role">CSE Student | Frontend Developer | Java & DSA Learner</p>
-                        <p class="hero-subtitle">
-                            I build clean, practical, and user-friendly web projects using HTML, CSS, JavaScript, and Java. Currently improving my GitHub profile through real-world student projects and cloud deployment basics.
-                        </p>
+                        <p class="hero-role">Frontend Developer · CSE Student at Parul University</p>
+                        <p class="hero-tagline">I build clean, practical web projects and take my work seriously.</p>
                         <div class="hero-buttons">
                             <a href="#projects" class="cta-button primary-btn">View Projects</a>
                             
-                            <div class="resume-btn-group">
-                                <a href="resume.pdf" target="_blank" class="cta-button secondary-btn">View Resume</a>
-                                <a href="resume.pdf" download class="cta-button download-btn" title="Download Resume">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-                                </a>
-                            </div>
+                            <a href="resume.pdf" target="_blank" class="cta-button primary-btn resume-view-btn">View Resume</a>
+                            <a href="resume.pdf" download class="cta-button secondary-btn resume-download-btn">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                    <polyline points="7 10 12 15 17 10"></polyline>
+                                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                                </svg>
+                                Download Resume
+                            </a>
                             
                             <div class="social-links-inline">
                                 <a href="https://github.com/Tirth-67" target="_blank" rel="noopener" class="social-icon-link" title="GitHub">
@@ -124,7 +141,7 @@
         String[] skills = {
             <span class="code-string">"Web Development"</span>,
             <span class="code-string">"Java Programming"</span>,
-            <span class="code-string">"DSA & Algorithms"</span>
+            <span class="code-string">"DSA &amp; Algorithms"</span>
         };
         
         <span class="code-keyword">boolean</span> readyToGrow = <span class="code-keyword">true</span>;
@@ -141,38 +158,6 @@
                         </div>
                     </div>
                 </div>
-                
-                <!-- Stat Cards -->
-                <div class="stat-cards-grid">
-                    <div class="stat-card">
-                        <div class="stat-icon">🎓</div>
-                        <div class="stat-info">
-                            <h3>B.Tech CSE</h3>
-                            <p>Parul University Student</p>
-                        </div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-icon">💻</div>
-                        <div class="stat-info">
-                            <h3>Frontend Projects</h3>
-                            <p>HTML, CSS, JavaScript</p>
-                        </div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-icon">☕</div>
-                        <div class="stat-info">
-                            <h3>Java & DSA</h3>
-                            <p>Problem Solving Learner</p>
-                        </div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-icon">☁️</div>
-                        <div class="stat-info">
-                            <h3>Cloud Basics</h3>
-                            <p>Git, GitHub, Netlify</p>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
 
@@ -180,57 +165,14 @@
         <section id="about" class="about-section scroll-reveal">
             <div class="section-container">
                 <span class="section-label">About</span>
-                <h2 class="section-title-left">Who I Am</h2>
-                <div class="about-grid">
-                    <div class="about-desc">
-                        <p class="lead-text">
-                            I am a B.Tech Computer Science Engineering student focused on building clean, practical, and user-friendly web applications.
-                        </p>
-                        <p>
-                            My technical journey is centered around frontend development, core Java programming, Data Structures & Algorithms, and understanding web mechanics. I enjoy translating logical problem-solving into real-world code that runs seamlessly in the browser.
-                        </p>
-                        <p>
-                            Currently, I am working on expanding my skillset, building robust portfolio projects, and improving my GitHub profile. I aim to grow continuously, learn modern technologies, and contribute productively to development teams through internship opportunities.
-                        </p>
-                    </div>
-                    
-                    <!-- Why This Portfolio (Recruiter Proof) -->
-                    <div class="proof-card">
-                        <div class="proof-header">
-                            <h3>Why This Portfolio?</h3>
-                            <span class="proof-subtitle">Recruiter & Engineering Checkpoints</span>
-                        </div>
-                        <ul class="proof-list">
-                            <li>
-                                <span class="proof-icon">🎯</span>
-                                <div class="proof-text">
-                                    <strong>Clean Project-Based Learning</strong>
-                                    <p>Avoiding tutorials in favor of building real systems that solve practical challenges.</p>
-                                </div>
-                            </li>
-                            <li>
-                                <span class="proof-icon">🌿</span>
-                                <div class="proof-text">
-                                    <strong>GitHub-Focused Development</strong>
-                                    <p>Pushing actual source code, tracking revisions, and refining version control habits.</p>
-                                </div>
-                            </li>
-                            <li>
-                                <span class="proof-icon">📱</span>
-                                <div class="proof-text">
-                                    <strong>Responsive Web Design</strong>
-                                    <p>Ensuring layout integrity and visual hierarchies scale gracefully on all screen sizes.</p>
-                                </div>
-                            </li>
-                            <li>
-                                <span class="proof-icon">📈</span>
-                                <div class="proof-text">
-                                    <strong>Continuous Improvement</strong>
-                                    <p>Actively expanding knowledge into Node.js backend processes and cloud hosting basics.</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+                <h2 class="section-title-left">About</h2>
+                <div class="about-content">
+                    <p class="lead-text">
+                        I'm a B.Tech Computer Science Engineering student at Parul University with a background in diploma engineering. My focus is frontend web development — building clean, functional interfaces using HTML, CSS, and JavaScript. I take my projects seriously and try to write code that is readable, intentional, and maintainable.
+                    </p>
+                    <p>
+                        Outside the classroom, I'm learning Java, practising data structures and algorithms, and exploring cloud deployment basics. I aim to grow from student developer to someone who can contribute meaningfully to real product teams. If you're looking for someone who is consistent, learning fast, and takes quality seriously — let's connect.
+                    </p>
                 </div>
             </div>
         </section>
@@ -256,14 +198,14 @@
                                     <span class="timeline-badge">Engineering Track</span>
                                 </div>
                                 <p class="timeline-desc">
-                                    Enrolled as a Diploma-to-Degree student, studying core computer science theories and implementing software engineering practices.
+                                    Enrolled through the lateral entry / diploma-to-degree track, building on a prior foundation in engineering before transitioning to B.Tech. Studying core computer science theories and implementing software engineering practices.
                                 </p>
                                 <div class="focus-areas">
                                     <h5>Focus Areas:</h5>
                                     <div class="focus-badges">
                                         <span>Web Development</span>
                                         <span>Java Programming</span>
-                                        <span>Data Structures & Algorithms</span>
+                                        <span>Data Structures &amp; Algorithms</span>
                                         <span>Cloud Basics</span>
                                     </div>
                                 </div>
@@ -279,23 +221,8 @@
             <div class="section-container">
                 <span class="section-label">Projects</span>
                 <h2 class="section-title">Selected Projects</h2>
-                <p class="section-subtitle">Practical projects focused on web development, JavaScript logic, and real-world student use cases.</p>
+                <p class="section-subtitle">Things I have built or am actively building.</p>
                 
-                <!-- Currently Building Highlight -->
-                <div class="currently-building-banner">
-                    <div class="banner-badge">Currently Building</div>
-                    <div class="banner-content">
-                        <h3>Laundry Management System</h3>
-                        <p>A web-based system for booking laundry services, calculating service prices, and tracking order status.</p>
-                        <div class="banner-meta">
-                            <span class="banner-tech-tag">HTML</span>
-                            <span class="banner-tech-tag">CSS</span>
-                            <span class="banner-tech-tag">JavaScript</span>
-                            <span class="banner-status-badge in-progress">In Progress</span>
-                        </div>
-                    </div>
-                </div>
-
                 <div class="projects-grid">
                     <!-- Project 1: Portfolio Website -->
                     <div class="project-card" onclick="openModal(0)">
@@ -312,7 +239,7 @@
                                 <span class="status-badge completed">Completed</span>
                             </div>
                             <h3>Portfolio Website</h3>
-                            <p class="project-summary">My personal developer portfolio upgraded to a premium, recruiter-ready profile with strong visual design.</p>
+                            <p class="project-summary">My personal developer portfolio — a clean, responsive showcase deployed on Netlify with dark/light theme support.</p>
                             <div class="tech-tags">
                                 <span class="tag">HTML</span>
                                 <span class="tag">CSS</span>
@@ -356,82 +283,15 @@
                                 <span class="tag">JavaScript</span>
                             </div>
                             <div class="project-card-actions" onclick="event.stopPropagation()">
-                                <button class="project-btn disabled-btn" disabled>Coming Soon</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project 3: Smart Task Manager -->
-                    <div class="project-card" onclick="openModal(2)">
-                        <div class="project-card-visual" style="background: url('task.png') center/cover no-repeat;">
-                        </div>
-                        <div class="project-card-content">
-                            <div class="project-header-meta">
-                                <span class="status-badge in-progress">In Progress</span>
-                            </div>
-                            <h3>Smart Task Manager</h3>
-                            <p class="project-summary">Lightweight productivity tool with drag-and-drop mechanics and local storage persistence for dashboard status.</p>
-                            <div class="tech-tags">
-                                <span class="tag">HTML/CSS</span>
-                                <span class="tag">JavaScript</span>
-                                <span class="tag">Local Storage</span>
-                            </div>
-                            <div class="project-card-actions" onclick="event.stopPropagation()">
-                                <button class="project-btn disabled-btn" disabled>Coming Soon</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project 4: Interactive Weather App -->
-                    <div class="project-card" onclick="openModal(3)">
-                        <div class="project-card-visual" style="background: url('weather.png') center/cover no-repeat;">
-                        </div>
-                        <div class="project-card-content">
-                            <div class="project-header-meta">
-                                <span class="status-badge coming-soon">Coming Soon</span>
-                            </div>
-                            <h3>Interactive Weather App</h3>
-                            <p class="project-summary">Real-time weather application with beautiful weather visual status updates and dynamic forecast reports.</p>
-                            <div class="tech-tags">
-                                <span class="tag">HTML/CSS</span>
-                                <span class="tag">JavaScript</span>
-                                <span class="tag">Weather API</span>
-                            </div>
-                            <div class="project-card-actions" onclick="event.stopPropagation()">
-                                <button class="project-btn disabled-btn" disabled>Coming Soon</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project 5: Next-Word Predictor -->
-                    <div class="project-card" onclick="openModal(4)">
-                        <div class="project-card-visual" style="background: url('next_word.png') center/cover no-repeat;">
-                        </div>
-                        <div class="project-card-content">
-                            <div class="project-header-meta">
-                                <span class="status-badge coming-soon">Coming Soon</span>
-                            </div>
-                            <h3>Next-Word Predictor</h3>
-                            <p class="project-summary">Advanced Python model that predicts the next logical word from user input phrases, applying NLP techniques.</p>
-                            <div class="tech-tags">
-                                <span class="tag">Python</span>
-                                <span class="tag">AI/ML</span>
-                                <span class="tag">TensorFlow</span>
-                                <span class="tag">NLP</span>
-                            </div>
-                            <div class="project-card-actions" onclick="event.stopPropagation()">
-                                <button class="project-btn disabled-btn" disabled>Coming Soon</button>
+                                <button class="project-btn disabled-btn" disabled>Code Coming Soon</button>
                             </div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="view-all-wrapper">
-                    <a href="https://github.com/Tirth-67?tab=repositories" target="_blank" rel="noopener" class="cta-button secondary-btn view-all-btn">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 8px; vertical-align: middle;"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                        View All Projects on GitHub
-                    </a>
-                </div>
+                <p class="projects-followup">
+                    More projects in progress. Follow the <a href="https://github.com/Tirth-67" target="_blank" rel="noopener">GitHub</a> to see what's next. →
+                </p>
             </div>
         </section>
 
@@ -445,17 +305,20 @@
                     <!-- Category 1: Frontend -->
                     <div class="skills-card">
                         <div class="skills-card-header">
-                            <span class="skills-cat-icon">🎨</span>
+                            <svg class="skills-cat-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
                             <h3>Frontend</h3>
                         </div>
                         <div class="skills-list">
                             <div class="skill-badge-item">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
-                                <span>HTML</span>
+                                <span>HTML5</span>
                             </div>
                             <div class="skill-badge-item">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
-                                <span>CSS</span>
+                                <span>CSS3</span>
                             </div>
                             <div class="skill-badge-item">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
@@ -464,11 +327,16 @@
                         </div>
                     </div>
 
-                    <!-- Category 2: Programming -->
+                    <!-- Category 2: Languages -->
                     <div class="skills-card">
                         <div class="skills-card-header">
-                            <span class="skills-cat-icon">☕</span>
-                            <h3>Programming</h3>
+                            <svg class="skills-cat-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-teal)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                            </svg>
+                            <h3>Languages</h3>
                         </div>
                         <div class="skills-list">
                             <div class="skill-badge-item">
@@ -479,18 +347,16 @@
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
                                 <span>Python</span>
                             </div>
-                            <div class="skill-badge-item">
-                                <div class="custom-dsa-icon">⛓️</div>
-                                <span>DSA</span>
-                            </div>
                         </div>
                     </div>
 
-                    <!-- Category 3: Tools -->
+                    <!-- Category 3: Tools & Platforms -->
                     <div class="skills-card">
                         <div class="skills-card-header">
-                            <span class="skills-cat-icon">🛠️</span>
-                            <h3>Tools & Platforms</h3>
+                            <svg class="skills-cat-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                            </svg>
+                            <h3>Tools &amp; Platforms</h3>
                         </div>
                         <div class="skills-list">
                             <div class="skill-badge-item">
@@ -509,27 +375,19 @@
                                 <img src="https://www.vectorlogo.zone/logos/netlify/netlify-icon.svg" alt="Netlify">
                                 <span>Netlify</span>
                             </div>
-                        </div>
-                    </div>
-
-                    <!-- Category 4: Currently Learning -->
-                    <div class="skills-card learning-card">
-                        <div class="skills-card-header">
-                            <span class="skills-cat-icon">🌱</span>
-                            <h3>Currently Learning</h3>
-                        </div>
-                        <div class="skills-list">
-                            <div class="skill-badge-item learning">
+                            <div class="skill-badge-item skill-learning">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
-                                <span>Node.js</span>
+                                <div class="skill-name-group">
+                                    <span>Node.js</span>
+                                    <span class="learning-label">Learning</span>
+                                </div>
                             </div>
-                            <div class="skill-badge-item learning">
+                            <div class="skill-badge-item skill-learning">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
-                                <span>MongoDB</span>
-                            </div>
-                            <div class="skill-badge-item learning">
-                                <div class="custom-dsa-icon">☁️</div>
-                                <span>Cloud / DevOps</span>
+                                <div class="skill-name-group">
+                                    <span>MongoDB</span>
+                                    <span class="learning-label">Learning</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -620,7 +478,10 @@
                             
                             <button type="submit" class="send-btn">
                                 <span>Send Message</span>
-                                <span class="btn-icon">✨</span>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                </svg>
                             </button>
                         </form>
                     </div>

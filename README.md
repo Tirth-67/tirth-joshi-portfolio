@@ -1,57 +1,52 @@
-# 🚀 Premium Recruiter-Ready Portfolio
+# Tirth Joshi — Portfolio Website
 
-This directory contains the main web assets of the portfolio application. Fully upgraded to provide visual consistency, clean semantic layout structuring, and modern user interactions suited for professional engineering reviewers.
+Personal developer portfolio built with HTML, CSS, and JavaScript.
 
-## 🔗 Live Site
-
-**URL:** [https://tirthjoshi.netlify.app](https://tirthjoshi.netlify.app)
-**Hosting Platform:** Netlify
+**Live:** [https://tirthjoshi.netlify.app](https://tirthjoshi.netlify.app)  
+**Author:** Tirth Joshi — B.Tech CSE, Parul University
 
 ---
 
-## 📁 Source Assets
+## Preview
 
-- `index.html` – Redesigned HTML structure. Contains accessibility improvements, modern fonts, sticky navbar layout, timeline grids, and inline SVGs.
-- `style.css` – Premium stylesheet using obsidian color variables (`--dark-bg`, `--accent-gradient`), responsive flex containers, glassmorphism filters, theme switches, and mobile drawer transitions.
-- `script.js` – Application coordinator containing the detailed project array (5 items), interactive modal triggers, navbar observer handlers, theme persistence storage, and Web3Forms submit feedback routines.
-- `resume.pdf` – Developer's current professional curriculum vitae.
+![Portfolio Screenshot](screenshot.png)
 
 ---
 
-## 🛠️ Local Customization & Adjustments
+## Tech Stack
 
-### 1. Update Contact Information
-Locate and edit these sections inside `index.html`:
-- Web3Forms API Key: Edit the `<input type="hidden" name="access_key" value="YOUR-KEY">` value on line 286.
-- Email: Email links on lines 81 and 243.
-- Social Links: Lines 88-95, and 250-275.
+HTML5 · CSS3 · JavaScript · Netlify
 
-### 2. Add New Projects
-To include more projects, open `script.js` and push a new configuration object to the `projectsData` array at the top of the file:
-```javascript
-{
-    title: 'Project Title',
-    status: 'Completed / In Progress',
-    summary: 'Brief description...',
-    description: 'Detailed description for the modal display...',
-    technologies: ['Tech 1', 'Tech 2'],
-    githubLink: 'URL',
-    liveLink: 'URL'
-}
+---
+
+## Projects Showcased
+
+### Laundry Management System
+Web-based booking and order tracking system for laundry services.  
+Stack: HTML, CSS, JavaScript  
+Status: In Progress
+
+### Portfolio Website
+This portfolio. Personal developer showcase, deployed on Netlify.  
+Stack: HTML, CSS, JavaScript  
+Live: [https://tirthjoshi.netlify.app](https://tirthjoshi.netlify.app)
+
+---
+
+## Run Locally
+
+Clone the repo and open `index.html` in any browser:
+
+```bash
+git clone https://github.com/Tirth-67/tirth-joshi-portfolio.git
+cd tirth-joshi-portfolio
+open index.html
 ```
 
 ---
 
-## 📝 Upgrades Completed Checklist
+## Contact
 
-- [x] Responsive layout (Desktop, Tablet, Mobile)
-- [x] Premium Obsidian and Indigo/Teal visual themes
-- [x] Seamless sticky navigation and mobile drawer
-- [x] Interactive Developer Java Code Preview Card
-- [x] Scannable Education timeline card layout
-- [x] Projects list (5 projects) with custom SVG icons (no broken images)
-- [x] Separate "Currently Building" Laundry service banner
-- [x] Why This Portfolio? recruiter aligning details card
-- [x] Contact section with direct profile links and Web3Forms
-- [x] Direct View and Download Resume actions for `resume.pdf`
-- [x] Persistent theme choice in browser localStorage
+Email: joshitirth2310@gmail.com  
+LinkedIn: [https://www.linkedin.com/in/tirth-joshi-ab0537308/](https://www.linkedin.com/in/tirth-joshi-ab0537308/)  
+GitHub: [https://github.com/Tirth-67](https://github.com/Tirth-67)
