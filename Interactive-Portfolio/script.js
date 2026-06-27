@@ -10,11 +10,11 @@ const projectsData = [
         liveLink: 'https://tirth-joshi-portfolio.vercel.app'
     },
     {
-        title: 'Laundry Management System',
+        title: 'AI Resume Analyzer',
         status: 'In Progress',
-        summary: 'A web-based system for booking laundry services, calculating service prices, and tracking order status.',
-        description: 'A dedicated web utility meant to simplify laundry orders. It enables students or customers to book service time slots, calculate rates dynamically based on laundry type and weight, and verify status from order start to completion. Formulated with clear, practical frontend views.',
-        technologies: ['HTML5', 'CSS3', 'JavaScript'],
+        summary: 'An AI-powered dashboard that analyzes resumes, gives improvement suggestions, and detects missing skills.',
+        description: 'An AI-powered dashboard that analyzes resumes, gives improvement suggestions, detects missing skills, and provides a resume score to help users improve their job applications. Features include resume upload, skill gap detection, and a clean responsive UI.',
+        technologies: ['HTML', 'Tailwind CSS', 'JavaScript', 'AI API', 'Supabase', 'Vercel'],
         githubLink: null,
         liveLink: null
     },

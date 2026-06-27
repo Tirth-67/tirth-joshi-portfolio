@@ -1024,7 +1024,7 @@ section {
 }
 
 .gradient-portfolio { background: linear-gradient(135deg, #3b82f6 0%, #1e3a8a 100%); }
-.gradient-laundry { background: linear-gradient(135deg, #06b6d4 0%, #083344 100%); }
+.gradient-resume { background: linear-gradient(135deg, #8b5cf6 0%, #4c1d95 100%); }
 
 /* Project details */
 .project-card-content {
@@ -1299,6 +1299,74 @@ section {
 
 [data-theme="light"] .github-icon-svg {
     filter: invert(0);
+}
+
+/* ----------------------------------------------------
+   CERTIFICATIONS SECTION
+---------------------------------------------------- */
+.certifications-section {
+    padding: 8rem 0 6rem;
+    border-top: 1px solid var(--card-border);
+}
+
+.certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.cert-card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.cert-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--card-border-hover);
+    box-shadow: var(--shadow-md);
+}
+
+.cert-icon-wrapper {
+    width: 48px;
+    height: 48px;
+    background: var(--accent-glow);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent-color);
+    border: 1px solid var(--card-border-hover);
+}
+
+.cert-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.cert-content h3 {
+    font-size: 1.15rem;
+    color: var(--text-color);
+    margin-bottom: 0.35rem;
+}
+
+.cert-content h4 {
+    font-size: 0.85rem;
+    color: var(--accent-teal);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.cert-content p {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    line-height: 1.6;
 }
 
 /* ----------------------------------------------------
