@@ -2,7 +2,7 @@
 
 Personal developer portfolio built with HTML, CSS, and JavaScript.
 
-**Live:** [https://tirthjoshi.netlify.app](https://tirthjoshi.netlify.app)  
+**Live:** [https://tirth-joshi-portfolio.vercel.app](https://tirth-joshi-portfolio.vercel.app)  
 **Author:** Tirth Joshi — B.Tech CSE, Parul University
 
 ---
@@ -15,7 +15,7 @@ Personal developer portfolio built with HTML, CSS, and JavaScript.
 
 ## Tech Stack
 
-HTML5 · CSS3 · JavaScript · Netlify
+HTML5 · CSS3 · JavaScript · Vercel
 
 ---
 
@@ -27,9 +27,9 @@ Stack: HTML, CSS, JavaScript
 Status: In Progress
 
 ### Portfolio Website
-This portfolio. Personal developer showcase, deployed on Netlify.  
+This portfolio. Personal developer showcase, deployed on Vercel.  
 Stack: HTML, CSS, JavaScript  
-Live: [https://tirthjoshi.netlify.app](https://tirthjoshi.netlify.app)
+Live: [https://tirth-joshi-portfolio.vercel.app](https://tirth-joshi-portfolio.vercel.app)
 
 ---
 

@@ -4,8 +4,8 @@ This directory contains the main web assets of the portfolio application. Fully 
 
 ## 🔗 Live Site
 
-**URL:** [https://tirthjoshi.netlify.app](https://tirthjoshi.netlify.app)
-**Hosting Platform:** Netlify
+**URL:** [https://tirth-joshi-portfolio.vercel.app](https://tirth-joshi-portfolio.vercel.app)
+**Hosting Platform:** Vercel
 
 ---
 

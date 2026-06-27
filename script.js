@@ -8,11 +8,11 @@ const projectsData = [
     {
         title: 'Portfolio Website',
         status: 'Completed',
-        summary: 'My personal developer portfolio — a clean, responsive showcase deployed on Netlify with dark/light theme support.',
+        summary: 'My personal developer portfolio — a clean, responsive showcase deployed on Vercel with dark/light theme support.',
         description: 'Redesigned personal space representing my skills as a CSE student. Built utilizing clean semantic markup, custom responsive CSS layouts, modern color palettes, CSS micro-animations, and subtle scroll revealing scripts. Fully responsive across phone, tablet, and desktop display viewports.',
         technologies: ['HTML5', 'CSS3', 'JavaScript', 'Responsive Design'],
         githubLink: 'https://github.com/Tirth-67/tirth-joshi-portfolio',
-        liveLink: 'https://tirthjoshi.netlify.app'
+        liveLink: 'https://tirth-joshi-portfolio.vercel.app'
     },
     {
         title: 'Laundry Management System',
