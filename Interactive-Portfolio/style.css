@@ -30,21 +30,21 @@
 }
 
 [data-theme="light"] {
-    --dark-bg: #f8fafc;
-    --card-bg: #ffffff;
+    --dark-bg: #F7F7F5;
+    --card-bg: #FAFAFA;
     --card-border: #e5e7eb;
     --card-border-hover: rgba(99, 102, 241, 0.25);
     
-    --text-color: #111827;
+    --text-color: #1F2937;
     --text-light: #4b5563;
-    --text-muted: #6b7280;
+    --text-muted: #6B7280;
     
     --accent-color: #4f46e5;       /* Premium Blue/Indigo */
     --accent-teal: #0d9488;        /* Darker Teal */
     --accent-glow: rgba(79, 70, 229, 0.08);
     --accent-gradient: linear-gradient(135deg, #4f46e5 0%, #0d9488 100%);
     
-    --nav-bg: rgba(248, 250, 252, 0.85);
+    --nav-bg: rgba(247, 247, 245, 0.85);
     --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
     --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.03);
     --shadow-lg: 0 20px 50px rgba(0, 0, 0, 0.06);
@@ -499,6 +499,11 @@ input:checked + .slider::before {
     background: rgba(255, 255, 255, 0.08);
     border-color: var(--text-light);
     transform: translateY(-2px);
+}
+
+[data-theme="light"] .navbar.scrolled {
+    background: rgba(247, 247, 245, 0.95);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
 }
 
 [data-theme="light"] .secondary-btn {
