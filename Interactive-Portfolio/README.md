@@ -14,7 +14,7 @@ This directory contains the main web assets of the portfolio application. Fully 
 - `index.html` – Redesigned HTML structure. Contains accessibility improvements, modern fonts, sticky navbar layout, timeline grids, and inline SVGs.
 - `style.css` – Premium stylesheet using obsidian color variables (`--dark-bg`, `--accent-gradient`), responsive flex containers, glassmorphism filters, theme switches, and mobile drawer transitions.
 - `script.js` – Application coordinator containing the detailed project array (5 items), interactive modal triggers, navbar observer handlers, theme persistence storage, and Web3Forms submit feedback routines.
-- `resume.pdf` – Developer's current professional curriculum vitae.
+- `tirth-joshi-resume.pdf` – Developer's current professional curriculum vitae.
 
 ---
 
