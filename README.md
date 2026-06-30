@@ -50,7 +50,7 @@ This portfolio is a custom-built, modern personal hub designed to show my skills
 2. **About:** Narrative introduction highlighting B.Tech CSE details and diploma engineering lateral-entry transition.
 3. **Education:** Interactive academic timeline detailing the timeline, institute, and focus areas at Parul University.
 4. **Selected Projects:** Cards presenting personal projects with customized gradient headers and details modal action links.
-5. **Technical Skillset:** Staggered categorization cards (Frontend, Languages, Tools & Platforms) displaying tools and active learning areas (Node.js, MongoDB).
+5. **Technical Skillset:** Staggered categorization cards (Frontend, Languages, Tools & Platforms) displaying tools and active learning areas (Antigravity, Cloud / DevOps).
 6. **Contact / Connect:** Direct message input form with toast status responses and inline clickable social detail boxes.
 
 ---
