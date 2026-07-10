@@ -390,8 +390,8 @@ input:checked + .slider::before {
 
 .hero-grid {
     display: grid;
-    grid-template-columns: 1.2fr 0.8fr;
-    gap: 4rem;
+    grid-template-columns: 1.3fr 0.7fr;
+    gap: 3rem;
     align-items: center;
 }
 
@@ -590,129 +590,63 @@ input:checked + .slider::before {
     transform: translateY(-2px);
 }
 
-/* Glassmorphic Code IDE Preview Card */
+/* Hero Visual — Current Focus Card */
 .hero-visual {
-    perspective: 1000px;
-}
-
-.code-card {
-    background: rgba(26, 27, 35, 0.65);
-    border: 1px solid var(--card-border);
-    border-radius: 12px;
-    box-shadow: var(--shadow-lg);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    overflow: hidden;
-    width: 100%;
-    max-width: 480px;
-    margin: 0 auto;
-    transform: rotateY(-5deg) rotateX(5deg);
-    transition: transform 0.5s ease, box-shadow 0.6s ease;
-}
-
-.code-card.compiled {
-    box-shadow: var(--shadow-lg), 0 0 40px rgba(16, 185, 129, 0.15);
-}
-
-.code-card:hover {
-    transform: rotateY(0deg) rotateX(0deg) scale(1.02);
-}
-
-.code-card-header {
-    background: rgba(17, 18, 23, 0.8);
-    padding: 0.75rem 1.25rem;
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+
+.focus-card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 16px;
+    box-shadow: var(--shadow-lg);
+    padding: 2rem;
+    width: 100%;
+    max-width: 360px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.focus-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg), var(--shadow-glow);
+}
+
+.focus-card-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
     border-bottom: 1px solid var(--card-border);
-    position: relative;
 }
 
-.window-controls {
-    display: flex;
-    gap: 6px;
-    position: absolute;
-    left: 1.25rem;
-}
-
-.control {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    display: inline-block;
-}
-
-.close-ctrl { background: #ef4444; }
-.minimize-ctrl { background: #eab308; }
-.maximize-ctrl { background: #22c55e; }
-
-.tab-title {
-    font-size: 0.8rem;
-    font-family: var(--font-mono);
-    color: var(--text-light);
-    margin: 0 auto;
-    font-weight: 500;
-}
-
-.code-card-body {
-    padding: 1.5rem;
-    overflow-x: auto;
-    max-width: 100%;
-}
-
-.code-card-body pre {
+.focus-card-header h3 {
     margin: 0;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-color);
+    font-family: var(--font-heading);
 }
 
-.code-card-body code {
-    font-family: var(--font-mono);
-    font-size: 0.85rem;
-    color: #e5e7eb;
-    text-align: left;
-    white-space: pre;
-    display: block;
-    line-height: 1.5;
-    min-height: 210px;
-}
-
-.code-keyword { color: #f43f5e; font-weight: 500; }
-.code-class { color: #60a5fa; }
-.code-method { color: #34d399; }
-.code-string { color: #fbbf24; }
-
-/* Typing cursor animation */
-.typing-cursor {
-    display: inline-block;
-    width: 2px;
-    height: 1.1em;
-    background: var(--accent-teal);
-    margin-left: 1px;
-    vertical-align: text-bottom;
-    animation: blink-cursor 0.75s step-end infinite;
-}
-
-@keyframes blink-cursor {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
-}
-
-.code-card-footer {
-    background: rgba(17, 18, 23, 0.5);
-    padding: 0.5rem 1.25rem;
-    border-top: 1px solid var(--card-border);
+.focus-card-list {
     display: flex;
-    justify-content: space-between;
-    font-size: 0.75rem;
-    color: var(--text-muted);
-    font-family: var(--font-mono);
+    flex-direction: column;
+    gap: 1.25rem;
 }
 
-.terminal-status {
-    color: var(--text-muted);
-    transition: color 0.4s ease;
+.focus-card-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 0.95rem;
 }
 
-.terminal-status.success {
-    color: #10b981;
+.focus-card-item svg {
+    flex-shrink: 0;
 }
 
 /* ----------------------------------------------------
@@ -1930,20 +1864,9 @@ section {
         font-size: 2.2rem;
     }
     
-    /* Code Card Mobile Adjustments */
-    .code-card {
+    /* Focus Card Mobile */
+    .focus-card {
         max-width: 100%;
-    }
-    
-    .code-card-body {
-        padding: 1rem;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-    }
-    
-    .code-card-body code {
-        font-size: 0.72rem;
-        white-space: pre;
     }
     
     /* Skills grid mobile */
@@ -1997,9 +1920,7 @@ section {
         font-size: 1.1rem;
     }
     
-    .code-card-body code {
-        font-size: 0.65rem;
-    }
+
     
     .contact-headline {
         font-size: 1.8rem;
@@ -2139,11 +2060,7 @@ section {
         transform: none !important;
     }
 
-    .typing-cursor,
-    .typewriter-text {
-        animation: none !important;
-        border-right-color: transparent !important;
-    }
+
 
     .pulse-dot::after {
         animation: none !important;
