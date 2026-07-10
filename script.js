@@ -41,49 +41,46 @@ const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)
 
     // Code structure for typing — each segment has text and optional class
     const codeSegments = [
-        { text: 'public class', cls: 'code-keyword' },
+        { text: 'const', cls: 'code-keyword' },
         { text: ' ' },
-        { text: 'Developer', cls: 'code-class' },
-        { text: ' {\n' },
+        { text: 'developer', cls: 'code-class' },
+        { text: ' = {\n' },
         { text: '    ' },
-        { text: 'public static void', cls: 'code-keyword' },
+        { text: 'name:', cls: 'code-keyword' },
         { text: ' ' },
-        { text: 'main', cls: 'code-method' },
-        { text: '(String[] args) {\n' },
-        { text: '        String name = ' },
         { text: '"Tirth Joshi"', cls: 'code-string' },
-        { text: ';\n' },
-        { text: '        String[] skills = {\n' },
-        { text: '            ' },
-        { text: '"Web Development"', cls: 'code-string' },
         { text: ',\n' },
-        { text: '            ' },
-        { text: '"Java Programming"', cls: 'code-string' },
+        { text: '    ' },
+        { text: 'skills:', cls: 'code-keyword' },
+        { text: ' [\n' },
+        { text: '        ' },
+        { text: '"Frontend Development"', cls: 'code-string' },
         { text: ',\n' },
-        { text: '            ' },
-        { text: '"DSA & Algorithms"', cls: 'code-string' },
-        { text: '\n        };\n' },
-        { text: '        \n' },
         { text: '        ' },
-        { text: 'boolean', cls: 'code-keyword' },
-        { text: ' readyToGrow = ' },
-        { text: 'true', cls: 'code-keyword' },
-        { text: ';\n' },
+        { text: '"Responsive Design"', cls: 'code-string' },
+        { text: ',\n' },
         { text: '        ' },
-        { text: 'if', cls: 'code-keyword' },
-        { text: ' (readyToGrow) {\n' },
-        { text: '            System.out.println(' },
+        { text: '"Cloud Computing (Learning)"', cls: 'code-string' },
+        { text: '\n    ],\n' },
+        { text: '    ' },
+        { text: 'build:', cls: 'code-method' },
+        { text: ' () => {\n' },
+        { text: '        console.' },
+        { text: 'log', cls: 'code-method' },
+        { text: '(' },
         { text: '"Ready to build!"', cls: 'code-string' },
         { text: ');\n' },
-        { text: '        }\n' },
         { text: '    }\n' },
-        { text: '}' }
+        { text: '};\n' },
+        { text: '\ndeveloper.' },
+        { text: 'build', cls: 'code-method' },
+        { text: '();' }
     ];
 
     if (prefersReducedMotion) {
         // Show final code immediately
         codeBlock.innerHTML = finalHTML;
-        terminalStatus.textContent = '✓ Compilation Successful';
+        terminalStatus.textContent = '✓ Build Successful';
         terminalStatus.classList.add('success');
         return;
     }
@@ -102,7 +99,7 @@ const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)
             // Typing complete — remove cursor and update status
             if (cursor.parentNode) cursor.remove();
             setTimeout(() => {
-                terminalStatus.textContent = '✓ Compilation Successful';
+                terminalStatus.textContent = '✓ Build Successful';
                 terminalStatus.classList.add('success');
                 document.querySelector('.code-card')?.classList.add('compiled');
             }, 400);
@@ -166,7 +163,7 @@ const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)
 
     const phrases = [
         'Frontend Developer',
-        'Java & DSA Enthusiast',
+        'Learning Cloud Computing',
         'CSE Student at Parul University',
         'Building for the Web'
     ];
