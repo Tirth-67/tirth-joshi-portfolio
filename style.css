@@ -137,8 +137,8 @@ h2 { font-weight: 800; }
 
 /* Custom Interactive Cursor */
 .custom-cursor {
-    width: 8px;
-    height: 8px;
+    width: 10px;
+    height: 10px;
     background: var(--accent-teal);
     border-radius: 50%;
     position: fixed;
@@ -146,25 +146,19 @@ h2 { font-weight: 800; }
     z-index: 9999;
     transform: translate(-50%, -50%);
     transition: width 0.2s, height 0.2s, background-color 0.2s;
-    display: none;
 }
 
 .cursor-glow {
-    width: 250px;
-    height: 250px;
-    background: radial-gradient(circle, var(--accent-glow) 0%, transparent 65%);
+    width: 40px;
+    height: 40px;
+    border: 1.5px solid var(--accent-color);
+    background: transparent;
+    border-radius: 50%;
     position: fixed;
     pointer-events: none;
     z-index: 9998;
     transform: translate(-50%, -50%);
-    display: none;
-}
-
-@media (pointer: fine) {
-    .custom-cursor,
-    .cursor-glow {
-        display: block;
-    }
+    transition: top 0.1s ease-out, left 0.1s ease-out, width 0.2s, height 0.2s, border-color 0.2s;
 }
 
 /* ----------------------------------------------------

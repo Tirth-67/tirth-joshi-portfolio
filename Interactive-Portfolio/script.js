@@ -299,11 +299,13 @@ if (window.matchMedia('(pointer: fine)').matches) {
 
             el.style.transform = `translate(${x * 0.25}px, ${y * 0.25}px)`;
             if (cursor) cursor.style.transform = 'translate(-50%, -50%) scale(1.6)';
+            if (cursorGlow) cursorGlow.style.transform = 'translate(-50%, -50%) scale(1.5)';
         });
 
         el.addEventListener('mouseleave', () => {
             el.style.transform = '';
             if (cursor) cursor.style.transform = 'translate(-50%, -50%) scale(1)';
+            if (cursorGlow) cursorGlow.style.transform = 'translate(-50%, -50%) scale(1)';
         });
     });
 }
