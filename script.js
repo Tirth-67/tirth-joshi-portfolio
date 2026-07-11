@@ -436,19 +436,77 @@ if (toggleSwitch) {
 
 
 // ============================================================
-//  13. CUSTOM CURSOR POSITIONING
+//  13. CUSTOM CURSOR — Smooth rAF-Based System
 // ============================================================
-const cursor = document.querySelector('.custom-cursor');
-const cursorGlow = document.querySelector('.cursor-glow');
+(function initCustomCursor() {
+    const cursor = document.querySelector('.custom-cursor');
+    const cursorGlow = document.querySelector('.cursor-glow');
 
-if (cursor && cursorGlow) {
+    // Only on desktop with fine pointer
+    if (!cursor || !cursorGlow || !window.matchMedia('(pointer: fine)').matches) return;
+
+    let mouseX = 0, mouseY = 0;
+    let glowX = 0, glowY = 0;
+    const lerpFactor = 0.15; // Smoothing factor for glow ring (lower = smoother trail)
+
+    // Track mouse position
     document.addEventListener('mousemove', (e) => {
-        cursor.style.left = e.clientX + 'px';
-        cursor.style.top = e.clientY + 'px';
-        cursorGlow.style.left = e.clientX + 'px';
-        cursorGlow.style.top = e.clientY + 'px';
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+
+        // Dot follows instantly (no lag)
+        cursor.style.transform = `translate(${mouseX - 4}px, ${mouseY - 4}px)`;
+
+        // Show cursor on first move
+        if (!cursor.classList.contains('visible')) {
+            cursor.classList.add('visible');
+            cursorGlow.classList.add('visible');
+            glowX = mouseX;
+            glowY = mouseY;
+        }
     });
-}
+
+    // Smooth animation loop for the glow ring
+    function animateGlow() {
+        // Lerp toward mouse position
+        glowX += (mouseX - glowX) * lerpFactor;
+        glowY += (mouseY - glowY) * lerpFactor;
+
+        cursorGlow.style.transform = `translate(${glowX - 18}px, ${glowY - 18}px)`;
+
+        requestAnimationFrame(animateGlow);
+    }
+    requestAnimationFrame(animateGlow);
+
+    // Hover detection for interactive elements
+    const hoverTargets = 'a, button, input, textarea, select, [onclick], .project-card, .cert-card, .contact-info-card, .social-icon-link, .cta-button, .send-btn, .theme-switch, .hamburger, label';
+
+    document.addEventListener('mouseover', (e) => {
+        if (e.target.closest(hoverTargets)) {
+            cursor.classList.add('hovering');
+            cursorGlow.classList.add('hovering');
+        }
+    });
+
+    document.addEventListener('mouseout', (e) => {
+        if (e.target.closest(hoverTargets)) {
+            cursor.classList.remove('hovering');
+            cursorGlow.classList.remove('hovering');
+        }
+    });
+
+    // Hide cursor when mouse leaves the viewport
+    document.addEventListener('mouseleave', () => {
+        cursor.classList.remove('visible');
+        cursorGlow.classList.remove('visible');
+    });
+
+    document.addEventListener('mouseenter', () => {
+        cursor.classList.add('visible');
+        cursorGlow.classList.add('visible');
+    });
+})();
+
 
 
 // ============================================================
@@ -464,14 +522,10 @@ if (window.matchMedia('(pointer: fine)').matches) {
             const y = e.clientY - rect.top - rect.height / 2;
 
             el.style.transform = `translate(${x * 0.15}px, ${y * 0.15}px)`;
-            if (cursor) cursor.style.transform = 'translate(-50%, -50%) scale(1.6)';
-            if (cursorGlow) cursorGlow.style.transform = 'translate(-50%, -50%) scale(1.5)';
         });
 
         el.addEventListener('mouseleave', () => {
             el.style.transform = '';
-            if (cursor) cursor.style.transform = 'translate(-50%, -50%) scale(1)';
-            if (cursorGlow) cursorGlow.style.transform = 'translate(-50%, -50%) scale(1)';
         });
     });
 }

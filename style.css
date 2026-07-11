@@ -59,7 +59,15 @@
     padding: 0;
     box-sizing: border-box;
     transition: background-color 0.4s ease, color 0.3s ease, border-color 0.4s ease, box-shadow 0.4s ease, fill 0.3s ease;
-    cursor: none !important;
+}
+
+/* Hide native cursor only on desktop with fine pointer */
+@media (pointer: fine) {
+    *,
+    *::before,
+    *::after {
+        cursor: none !important;
+    }
 }
 
 html {
@@ -135,30 +143,69 @@ h1, h2, h3, h4 {
 h1 { font-weight: 800; }
 h2 { font-weight: 800; }
 
-/* Custom Interactive Cursor */
+/* Custom Interactive Cursor — Smooth Minimal Design */
 .custom-cursor {
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     background: var(--accent-teal);
     border-radius: 50%;
     position: fixed;
+    top: 0;
+    left: 0;
     pointer-events: none;
     z-index: 9999;
+    will-change: transform;
     transform: translate(-50%, -50%);
-    transition: width 0.2s, height 0.2s, background-color 0.2s;
+    opacity: 0;
+    transition: opacity 0.3s ease, width 0.25s ease, height 0.25s ease, background-color 0.25s ease;
+}
+
+.custom-cursor.visible {
+    opacity: 1;
+}
+
+.custom-cursor.hovering {
+    width: 40px;
+    height: 40px;
+    background: rgba(99, 102, 241, 0.12);
+    border: 1.5px solid var(--accent-color);
+    mix-blend-mode: normal;
 }
 
 .cursor-glow {
-    width: 40px;
-    height: 40px;
-    border: 1.5px solid var(--accent-color);
+    width: 36px;
+    height: 36px;
+    border: 1px solid rgba(99, 102, 241, 0.25);
     background: transparent;
     border-radius: 50%;
     position: fixed;
+    top: 0;
+    left: 0;
     pointer-events: none;
     z-index: 9998;
+    will-change: transform;
     transform: translate(-50%, -50%);
-    transition: top 0.1s ease-out, left 0.1s ease-out, width 0.2s, height 0.2s, border-color 0.2s;
+    opacity: 0;
+    transition: opacity 0.3s ease, width 0.25s ease, height 0.25s ease, border-color 0.25s ease;
+}
+
+.cursor-glow.visible {
+    opacity: 1;
+}
+
+.cursor-glow.hovering {
+    width: 44px;
+    height: 44px;
+    border-color: rgba(99, 102, 241, 0.15);
+    opacity: 0;
+}
+
+/* Hide custom cursor on touch / mobile devices */
+@media (pointer: coarse) {
+    .custom-cursor,
+    .cursor-glow {
+        display: none !important;
+    }
 }
 
 /* ----------------------------------------------------
