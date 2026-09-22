@@ -20,7 +20,7 @@ const projectsData = [
         summary: 'An AI-powered dashboard that analyzes resumes, gives improvement suggestions, and detects missing skills.',
         description: 'An AI-powered dashboard that analyzes resumes, gives improvement suggestions, detects missing skills, and provides a resume score to help users improve their job applications. Features include resume upload, skill gap detection, and a clean responsive UI.',
         technologies: ['HTML', 'Tailwind CSS', 'JavaScript', 'AI API', 'Supabase', 'Vercel'],
-        githubLink: null,
+        githubLink: 'https://github.com/Tirth-67/ai-resume-analyzer',
         liveLink: null
     }
 ];
@@ -529,3 +529,6 @@ if (window.matchMedia('(pointer: fine)').matches) {
         });
     });
 }
+
+// Auto-update footer year
+document.getElementById('currentYear').textContent = new Date().getFullYear();

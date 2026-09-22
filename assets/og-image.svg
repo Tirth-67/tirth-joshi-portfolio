@@ -1,0 +1,22 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="ogbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#111217;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1b23;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="ogaccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#14b8a6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#ogbg)"/>
+  <circle cx="200" cy="150" r="120" fill="url(#ogaccent)" opacity="0.15"/>
+  <circle cx="1000" cy="480" r="180" fill="url(#ogaccent)" opacity="0.1"/>
+  <text x="600" y="240" text-anchor="middle" font-family="system-ui, sans-serif" font-size="48" font-weight="800" fill="#f3f4f6" letter-spacing="-0.02em">Tirth Joshi</text>
+  <text x="600" y="300" text-anchor="middle" font-family="system-ui, sans-serif" font-size="24" font-weight="500" fill="url(#ogaccent)" letter-spacing="0.1em">FRONTEND DEVELOPER</text>
+  <text x="600" y="340" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18" font-weight="400" fill="#9ca3af">CSE Student • Cloud Computing (AWS)</text>
+  <rect x="400" y="380" width="400" height="4" rx="2" fill="url(#ogaccent)" opacity="0.4"/>
+  <text x="600" y="450" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" font-weight="500" fill="#6b7280">Open to Internships</text>
+  <text x="600" y="520" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="400" fill="#6b7280">tirth-joshi-portfolio.vercel.app</text>
+  <text x="600" y="580" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="400" fill="#6b7280">© 2026 Tirth Joshi</text>
+</svg>
